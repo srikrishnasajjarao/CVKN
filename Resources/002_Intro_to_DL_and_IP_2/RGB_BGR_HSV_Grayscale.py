@@ -3,7 +3,11 @@ import numpy as np
 
 def main(grid):
     cap = cv2.VideoCapture(0)  # 0 for default webcam
-
+    
+    # Set optional capture resolution (optional)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
+    
     while True:
         ret, frame = cap.read()
 
