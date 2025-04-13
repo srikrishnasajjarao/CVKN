@@ -1,3 +1,5 @@
+# Cool colors are typically in the blue and green range (hue values between 90-180 in HSV), while warm colors are in the red, orange, and yellow range (hue values between 0-60).
+
 import cv2
 import numpy as np
 
