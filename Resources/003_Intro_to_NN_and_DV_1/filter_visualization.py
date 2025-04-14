@@ -101,6 +101,10 @@ def display_grid(frame, filtered_frames, filter_names):
 
 def main():
     cap = cv2.VideoCapture(0)
+    
+    # Set optional capture resolution (optional)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 300)
 
     while True:
         ret, frame = cap.read()
