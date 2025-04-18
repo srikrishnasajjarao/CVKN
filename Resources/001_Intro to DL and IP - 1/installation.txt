@@ -1,2 +1,0 @@
-conda create -n cv_live python=3.10
-conda activate cv_live
